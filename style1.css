@@ -1,0 +1,241 @@
+.html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(45deg, #4db851, #e20c0c, #e53ae5d0, #1030fc);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
+}
+
+@keyframes color {
+  0% {
+    background-position: 10% 50%;
+  }
+  50% {
+    background-position: 80% 50%;
+  }
+  100% {
+    background-position: 10% 50%;
+  }
+}
+
+.intro-text {
+  position: absolute;
+  top: 58%;
+  left: 36%;
+  transform: translate(-50%, -50%);
+  text-align: left;
+  font-family: "Michroma", sans-serif;
+  animation: fadeIn 2s linear;
+  animation-delay: 1s;
+}
+
+.intro-text h1 {
+  font-size: 64px;
+  color: #181616;
+  font-weight: bold;
+  font-family: "Michroma", sans-serif;
+  animation: fadeIn 2s linear;
+  animation-delay: 1s;
+}
+
+.highlight {
+  color: #ffffff;
+}
+
+.subtitle-text {
+  font-size: 30px;
+  color: #000000;
+  margin-top: 40px;
+  font-weight: bolder;
+  font-family: "Nixie One", system-ui;
+}
+
+.cover-image {
+  position: absolute;
+  top: 20%;
+  right: 15%;
+  transform: translate(120%, -30%);
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  animation: fadeIn 2s linear;
+  animation-delay: 1s;
+}
+
+.button-container {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  background-color: transparent;
+  padding: 10px;
+  border-radius: 30px;
+  transition: background-color 0.5s ease-in-out;
+  animation: fadeIn 2s linear;
+  animation-delay: 1s;
+}
+
+.button-container:hover {
+  background-color: #ffffff76;
+}
+
+.btn {
+  background-color: transparent;
+  border: none;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transition: background-color 0.3s ease-in-out;
+  border: 2px solid #000000;
+  border-radius: 20px;
+}
+
+.section-container {
+  position: relative;
+  margin-top: 100vh;
+}
+
+.section {
+  padding: 20px;
+  background-color: transparent;
+  margin-bottom: 20px;
+}
+
+#about-me:target, #qualifications:target, #experience:target, #contact:target {
+  display: block;
+}
+
+.bio {
+  font-size: 24px;
+  font-family: "Nixie One", system-ui;
+  font-weight: bolder;
+  max-width: 80%;
+  margin: auto 40px;
+  padding: 0;
+  border: none;
+  box-shadow: none;
+}
+
+.bio li {
+  font-size: 20px;
+}
+
+.about-me-container {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100vh;
+}
+
+.image-container {
+  width: 100%;
+  height: 110vh;
+  overflow: hidden;
+}
+
+.image-container img {
+  padding: 10px;
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+.about-me {
+  padding: 20px;
+  box-sizing: border-box;
+  margin-left: 10px;
+}
+
+
+
+.side-by-side-container {
+  font-size: 24px;
+  font-family: "Nixie One", system-ui;
+  font-weight: bolder;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.qualifications-container, .projects-container {
+  flex-basis: 47%; 
+  margin: 20px; 
+}
+
+
+.footer-container {
+  position: relative;
+  margin-top: 0vh;
+  background-color: #a9a4a470;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  padding: 80px;
+}
+
+.footer-content h2 {
+  font-size: 44px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.footer-content input[type="email"], .footer-content textarea {
+  padding: 5px;
+  border-radius: 5px;
+  width: 150%;
+  margin-bottom: 10px;
+}
+
+.footer-content input[type="submit"] {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-content input[type="submit"]:hover {
+  background-color: #3e8e41;
+}
+
+.social-links-container {
+  width: 10%;
+  margin: 20px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-links li {
+  margin: 10px;
+}
